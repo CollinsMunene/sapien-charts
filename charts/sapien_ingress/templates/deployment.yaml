@@ -51,21 +51,6 @@ spec:
         - name: https
           containerPort: 443
           protocol: TCP
-        env:
-        - name: OIDC_DISCOVERY_URL
-          value: {{ .Values.oidcDiscoveryUrl }}
-        - name: OIDC_CLIENT_ID
-          value: {{ .Values.oidcClientId }}
-        - name: OIDC_CLIENT_SECRET
-          value: {{ .Values.oidcClientSecret }}
-        - name: OIDC_REDIRECT_TO_LOCALHOST
-          value: {{ .Values.oidcRedirectToLocalhost | quote }}
-        - name: OUR_NAMESPACE
-          value: {{ .Release.Name }}
-        - name: OUR_SERVICE
-          value: {{ .Chart.Name }}-controller
-        - name: OUR_FIELD_MANAGER
-          value: {{ .Chart.Name }}-controller
         resources:
           requests:
             cpu: 100m
