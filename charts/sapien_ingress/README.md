@@ -65,13 +65,18 @@ _**Sapien Africa Ingress Controller**_ is provided as a [Helm](https://helm.sh/)
         helm repo update
 
         # install the charts
-        helm upgrade --install sapien-ingress sapien-charts/sapien_ingress
+        helm upgrade --install sapien-ingress sapien-charts/sapien-ingress
       
+        # to update
+        helm repo update
+        helm upgrade --install sapien-ingress sapien-charts/sapien-ingress
+
       
 * Run the commands below to deploy a simple app and an ingress resource:
 
+      git clone https://github.com/CollinsMunene/sapien-charts.git
       cd example
-      kubectl apply -f simple-web-app.yaml -n sapienafrica-ingress-controller
-      kubectl apply -f ingress.yaml -n sapienafrica-ingress-controller
+      kubectl apply -f simple-web-app.yaml -n sapien-ingress
+      kubectl apply -f ingress.yaml -n sapien-ingress
       
  And that's it, you should have your ingress rules redirecting traffic as you have set them
