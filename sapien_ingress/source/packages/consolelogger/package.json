@@ -1,0 +1,10 @@
+{
+  "name": "sapienafrica-ingress-controller-plugin-consolelogger",
+  "version": "0.1.0",
+  "description": "",
+  "dependencies": {
+    "sapienafrica-ingress-controller-core": "workspace:*"
+  },
+  "author": "Collins H. Munene",
+  "license": "MIT"
+}

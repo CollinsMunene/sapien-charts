@@ -1,0 +1,11 @@
+{
+  "name": "sapienafrica-ingress-controller-plugin-k8scrdsession",
+  "version": "0.1.0",
+  "description": "",
+  "dependencies": {
+    "@kubernetes/client-node": "^0.15.0",
+    "sapienafrica-ingress-controller-core": "workspace:*"
+  },
+  "author": "Collins H. Munene",
+  "license": "MIT"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "ingress-sapienafrica",
+  "version": "0.1.0",
+  "description": "Sapien Africa Ingress Controller for Kubernetes.",
+  "main": "start.js",
+  "scripts": {
+    "dev": "node start.js"
+  },
+  "author": "Collins H. Munene <cmunene@devligence.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@kubernetes/client-node": "^0.15.0",
+    "@types/node": "^16.3.2",
+    "sapienafrica-ingress-controller-core": "workspace:*",
+    "sapienafrica-ingress-controller-plugin-basicauth": "workspace:*",
+    "sapienafrica-ingress-controller-plugin-consolelogger": "workspace:*",
+    "sapienafrica-ingress-controller-plugin-k8scrdsession": "workspace:*",
+    "sapienafrica-ingress-controller-plugin-openid": "workspace:*",
+    "ts-node": "^10.1.0",
+    "typescript": "^4.3.5"
+  }
+}
