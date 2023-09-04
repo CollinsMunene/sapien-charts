@@ -59,10 +59,13 @@ You should also have the following section in the `spec` of your `Ingress` (repl
 
 _**Sapien Africa Ingress Controller**_ is provided as a [Helm](https://helm.sh/) chart. You can install it as follows:
 * Run the commands below to install sapien controller:
+      
+        # add the repo
+        helm repo add sapien-charts https://collinsmunene.github.io/sapien-charts/
+        helm repo update
 
-     
-      helm repo add sapienafrica-ingress https://[I'll find a location]/sapienafrica-ingress
-
+        # install the charts
+        helm upgrade --install sapien-ingress sapien-charts/sapien_ingress
       
       
 * Run the commands below to deploy a simple app and an ingress resource:
