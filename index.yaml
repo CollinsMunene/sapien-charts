@@ -1,5 +1,16 @@
 apiVersion: v1
 entries:
+  sapien-ingress:
+  - apiVersion: v1
+    appVersion: 1.16.2
+    created: "2023-09-04T10:18:12.10830985Z"
+    description: Sapien Africa Ingress Controller
+    digest: d60182e0262fb6c7a4c13797a40731328d95845eb29ae32238f3f7d3e8cf9bc0
+    name: sapien-ingress
+    type: application
+    urls:
+    - https://github.com/CollinsMunene/sapien-charts/releases/download/sapien-ingress-0.1.2/sapien-ingress-0.1.2.tgz
+    version: 0.1.2
   sapien_ingress:
   - apiVersion: v1
     appVersion: 1.16.1
@@ -21,4 +32,4 @@ entries:
     urls:
     - https://github.com/CollinsMunene/sapien-charts/releases/download/sapien_ingress-0.1.0/sapien_ingress-0.1.0.tgz
     version: 0.1.0
-generated: "2023-09-04T10:13:58.541111002Z"
+generated: "2023-09-04T10:18:12.108328252Z"
